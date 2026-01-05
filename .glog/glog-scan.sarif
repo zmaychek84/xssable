@@ -12,49 +12,7 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "64870c0e-2b9a-3abe-aa3c-dd519d3219c6",
-              "name": "resources.rules.python.flask-app-route-handler",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
-              },
-              "fullDescription": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
               "id": "a1e1b497-6fcc-3a95-8503-4c48cb5f85aa",
-              "name": "resources.rules.python.flask-app-route-handler",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
-              },
-              "fullDescription": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
-              "id": "d9ed1c80-0e29-3110-8337-e973bafdf1cf",
               "name": "resources.rules.python.flask-app-route-handler",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
@@ -96,7 +54,70 @@
               }
             },
             {
+              "id": "64870c0e-2b9a-3abe-aa3c-dd519d3219c6",
+              "name": "resources.rules.python.flask-app-route-handler",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
+              },
+              "fullDescription": {
+                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high"
+              }
+            },
+            {
               "id": "740fdbb6-ba2a-32fc-a50c-d42b0d07fe1f",
+              "name": "resources.rules.python.flask-app-route-handler",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
+              },
+              "fullDescription": {
+                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high"
+              }
+            },
+            {
+              "id": "d9ed1c80-0e29-3110-8337-e973bafdf1cf",
+              "name": "resources.rules.python.flask-app-route-handler",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
+              },
+              "fullDescription": {
+                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high"
+              }
+            },
+            {
+              "id": "29d2f1be-6be3-36eb-bc92-0b098ab82af2",
               "name": "resources.rules.python.flask-app-route-handler",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
@@ -132,27 +153,6 @@
               "help": {
                 "text": "Flask does not automatically escape Jinja templates unless they have\n.html, .htm, .xml, or .xhtml extensions. This could lead to XSS attacks.\nUse .html, .htm, .xml, or .xhtml for your template extensions.\nSee https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup\nfor more information.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
                 "markdown": "Flask does not automatically escape Jinja templates unless they have\n.html, .htm, .xml, or .xhtml extensions. This could lead to XSS attacks.\nUse .html, .htm, .xml, or .xhtml for your template extensions.\nSee https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup\nfor more information.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup](https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup)\n - [https://blog.r2c.dev/2020/bento-check-unescaped-template-extensions-in-flask/](https://blog.r2c.dev/2020/bento-check-unescaped-template-extensions-in-flask/)\n - [https://bento.dev/checks/flask/unescaped-file-extension/](https://bento.dev/checks/flask/unescaped-file-extension/)\n"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
-              "id": "29d2f1be-6be3-36eb-bc92-0b098ab82af2",
-              "name": "resources.rules.python.flask-app-route-handler",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
-              },
-              "fullDescription": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
               },
               "properties": {
                 "precision": "very-high"
@@ -199,6 +199,28 @@
               "properties": {
                 "precision": "very-high"
               }
+            },
+            {
+              "id": "214bade0-42c8-32f9-ba95-8d0a58a127f0",
+              "name": "Potential Interface Binding Vulnerability",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nPotential Interface Binding Vulnerability in Python refers to a situation where a web application is configured to listen on all available network interfaces. In Python, this is often seen when using Flask's `app.run()` function without specifying the host parameter. By default, Flask's `app.run()` function binds to `127.0.0.1` (localhost), which is safe. However, if the host parameter is set to `0.0.0.0`, the application will listen on all available network interfaces, potentially exposing the application to the internet.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to always specify the host parameter when using the `app.run()` function. If the application is meant to be accessed from the same machine, use `127.0.0.1` or `localhost`. If the application is meant to be accessed from other machines on the same network, use the machine's private IP address.\n\n## Source Code Fix Recommendation\n\nInstead of:\n\n```python\napp.run(host='0.0.0.0')\n```\n\nUse:\n\n```python\napp.run(host='127.0.0.1')\n```\n\nOr:\n\n```python\napp.run(host='192.168.1.2')  # Replace with your machine's private IP address\n```\n\n## Library Dependencies\n\nThe code example requires the Flask library.\n\n```bash\npip install flask\n```\n\n## References\n\n- [CWE-284: Improper Access Control](https://cwe.mitre.org/data/definitions/284.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-284",
+                    "url": "https://cwe.mitre.org/data/definitions/284.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-284"
+                ]
+              }
             }
           ],
           "language": "en-US",
@@ -243,11 +265,11 @@
           "properties": {}
         },
         {
-          "ruleId": "d9ed1c80-0e29-3110-8337-e973bafdf1cf",
+          "ruleId": "081bbd9b-5ad6-3b9b-8564-8a9c3da097c9",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Flask HTTP route \"/login\" will handle route requests"
+            "text": "Regex `r\"^\\w+$\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
           },
           "locations": [
             {
@@ -257,19 +279,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 40,
-                  "startColumn": 1,
-                  "endLine": 66,
-                  "endColumn": 81,
+                  "startLine": 49,
+                  "startColumn": 26,
+                  "endLine": 49,
+                  "endColumn": 54,
                   "snippet": {
-                    "text": "@app.route(\"/login\", methods=[\"GET\", \"POST\"])\ndef login():\n    if request.method == \"GET\":\n        return render_template(\"login.html\")\n\n    # POST\n    username = request.form.get(\"username\")\n    password = request.form.get(\"password\")\n\n    if not (username and re.match(r\"^\\w+$\", username)):\n        return redirect(\"/login#Please%20specify%20a%20valid%20username!\", code=302)\n\n    # Login existing user\n    if usermanager.user_exists(username):\n        if usermanager.check_password(username, password):\n            return login_user(username)\n        else:\n            return redirect(\n                \"/login#The%20specified%20password%20was%20incorrect!\", code=302\n            )\n    # Register a new user\n    else:\n        if password:\n            usermanager.add(username, password)\n            return login_user(username)\n        else:\n            return redirect(\"/login#Please%20specify%20a%20password!\", code=302)"
+                    "text": "    if not (username and re.match(r\"^\\w+$\", username)):"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "20ce8e0ecece1a12dd9a6862ce3a616d2c3dd79efa1d6ef27cadea5c2dba54f1f886a0d2726cd122a3dab22cf5e59d2b236bdb34add863c15922eb1b15b00316_0"
+            "matchBasedId/v1": "ef3e89b3365c41befb43ed1be559038c03d261c31a355489685bd699e5d70b3464484c579636cc8bc13c89a70a5f3036be8d18e5d483ab929d7792fac7a94600_0"
           },
           "properties": {}
         },
@@ -305,37 +327,6 @@
           "properties": {}
         },
         {
-          "ruleId": "081bbd9b-5ad6-3b9b-8564-8a9c3da097c9",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `r\"^\\w+$\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "app.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 26,
-                  "endLine": 49,
-                  "endColumn": 54,
-                  "snippet": {
-                    "text": "    if not (username and re.match(r\"^\\w+$\", username)):"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "ef3e89b3365c41befb43ed1be559038c03d261c31a355489685bd699e5d70b3464484c579636cc8bc13c89a70a5f3036be8d18e5d483ab929d7792fac7a94600_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "740fdbb6-ba2a-32fc-a50c-d42b0d07fe1f",
           "kind": "fail",
           "level": "warning",
@@ -367,11 +358,11 @@
           "properties": {}
         },
         {
-          "ruleId": "f2fd2a7d-6854-3ce0-bdf1-377b287e0653",
+          "ruleId": "d9ed1c80-0e29-3110-8337-e973bafdf1cf",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Flask does not automatically escape Jinja templates unless they have .html, .htm, .xml, or .xhtml extensions. This could lead to XSS attacks. Use .html, .htm, .xml, or .xhtml for your template extensions. See https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup for more information."
+            "text": "Flask HTTP route \"/login\" will handle route requests"
           },
           "locations": [
             {
@@ -381,19 +372,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 96,
-                  "startColumn": 12,
-                  "endLine": 96,
-                  "endColumn": 82,
+                  "startLine": 40,
+                  "startColumn": 1,
+                  "endLine": 66,
+                  "endColumn": 81,
                   "snippet": {
-                    "text": "    return render_template(\"blogs.tpl\", username=sanitize(username), blogs=blogs)"
+                    "text": "@app.route(\"/login\", methods=[\"GET\", \"POST\"])\ndef login():\n    if request.method == \"GET\":\n        return render_template(\"login.html\")\n\n    # POST\n    username = request.form.get(\"username\")\n    password = request.form.get(\"password\")\n\n    if not (username and re.match(r\"^\\w+$\", username)):\n        return redirect(\"/login#Please%20specify%20a%20valid%20username!\", code=302)\n\n    # Login existing user\n    if usermanager.user_exists(username):\n        if usermanager.check_password(username, password):\n            return login_user(username)\n        else:\n            return redirect(\n                \"/login#The%20specified%20password%20was%20incorrect!\", code=302\n            )\n    # Register a new user\n    else:\n        if password:\n            usermanager.add(username, password)\n            return login_user(username)\n        else:\n            return redirect(\"/login#Please%20specify%20a%20password!\", code=302)"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "dd31fded618cb45a996884b27805f6cd73cb6e4bd52570275ba604755ece954c622c2efb10d9226c642e85db35e23cca5f6d54fbc07588ca0446afdb45d60edf_0"
+            "matchBasedId/v1": "20ce8e0ecece1a12dd9a6862ce3a616d2c3dd79efa1d6ef27cadea5c2dba54f1f886a0d2726cd122a3dab22cf5e59d2b236bdb34add863c15922eb1b15b00316_0"
           },
           "properties": {}
         },
@@ -429,11 +420,11 @@
           "properties": {}
         },
         {
-          "ruleId": "9740577d-fe3f-3ed1-8cfb-b34759cd14cf",
+          "ruleId": "f2fd2a7d-6854-3ce0-bdf1-377b287e0653",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Flask HTTP route \"/\" will handle route requests"
+            "text": "Flask does not automatically escape Jinja templates unless they have .html, .htm, .xml, or .xhtml extensions. This could lead to XSS attacks. Use .html, .htm, .xml, or .xhtml for your template extensions. See https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup for more information."
           },
           "locations": [
             {
@@ -443,19 +434,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 119,
-                  "startColumn": 1,
-                  "endLine": 124,
-                  "endColumn": 77,
+                  "startLine": 96,
+                  "startColumn": 12,
+                  "endLine": 96,
+                  "endColumn": 82,
                   "snippet": {
-                    "text": "@app.route(\"/\")\ndef home():\n    if not logged_in():\n        return redirect(\"/login\", code=302)\n\n    return render_template(\"index.html\", username=session[SESSION_USERNAME])"
+                    "text": "    return render_template(\"blogs.tpl\", username=sanitize(username), blogs=blogs)"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "671936d79c5e004eaaa9c54e988cfd11c752649e6397a5e2ba20842b42cd1c23022b24a4af096367fdb7f9bb0b7bca46af0e923c7f796699521b5d7c192ed42b_0"
+            "matchBasedId/v1": "dd31fded618cb45a996884b27805f6cd73cb6e4bd52570275ba604755ece954c622c2efb10d9226c642e85db35e23cca5f6d54fbc07588ca0446afdb45d60edf_0"
           },
           "properties": {}
         },
@@ -489,6 +480,81 @@
             "matchBasedId/v1": "4cd678ba7a41fc9b86afb7e17aeafefbe343c3d350c9d1c2e42fb7cb3474164e9eb1907005e2c64393d6cb7e4e19aaa5d3f02ce6b2dd52dfffe9e983e0732ea8_0"
           },
           "properties": {}
+        },
+        {
+          "ruleId": "9740577d-fe3f-3ed1-8cfb-b34759cd14cf",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Flask HTTP route \"/\" will handle route requests"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 1,
+                  "endLine": 124,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "@app.route(\"/\")\ndef home():\n    if not logged_in():\n        return redirect(\"/login\", code=302)\n\n    return render_template(\"index.html\", username=session[SESSION_USERNAME])"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "671936d79c5e004eaaa9c54e988cfd11c752649e6397a5e2ba20842b42cd1c23022b24a4af096367fdb7f9bb0b7bca46af0e923c7f796699521b5d7c192ed42b_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "214bade0-42c8-32f9-ba95-8d0a58a127f0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential Interface Binding Vulnerability"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app.py"
+                },
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 13,
+                  "endLine": 128,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "    app.run(\"0.0.0.0\")\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 127,
+                  "endLine": 128,
+                  "snippet": {
+                    "text": "if __name__ == \"__main__\":\n    app.run(\"0.0.0.0\")\n"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "505f4249ce8d3bfa25a1f8195a984b37e62cb7b63de4f65bfdc027de1b0f06b5",
+            "glog-pfp-ruleFileCode/v1": "14c7bfc6a6e378a7a29b08e6545f98d6a886c25f025e3061943c240d6f82f3f7"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "14c7bfc6a6e378a7a29b08e6545f98d6a886c25f025e3061943c240d6f82f3f7"
+          },
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "MEDIUM"
+          }
         }
       ],
       "newlineSequences": [
