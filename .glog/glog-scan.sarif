@@ -12,192 +12,25 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "a1e1b497-6fcc-3a95-8503-4c48cb5f85aa",
-              "name": "resources.rules.python.flask-app-route-handler",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
-              },
-              "fullDescription": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
-              "id": "081bbd9b-5ad6-3b9b-8564-8a9c3da097c9",
-              "name": "resources.rules.python.dlint-catastrophic-redos",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.dlint-catastrophic-redos"
-              },
-              "fullDescription": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
-              "id": "64870c0e-2b9a-3abe-aa3c-dd519d3219c6",
-              "name": "resources.rules.python.flask-app-route-handler",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
-              },
-              "fullDescription": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
-              "id": "740fdbb6-ba2a-32fc-a50c-d42b0d07fe1f",
-              "name": "resources.rules.python.flask-app-route-handler",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
-              },
-              "fullDescription": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
               "id": "d9ed1c80-0e29-3110-8337-e973bafdf1cf",
-              "name": "resources.rules.python.flask-app-route-handler",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
-              },
-              "fullDescription": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
+              "name": "\"Handling Route Requests with Flask HTTP \"/login\" Route\"",
+              "helpUri": "https://www.glog.ai/",
               "help": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+                "text": "",
+                "markdown": "## Description\n\nIn Python Flask web applications, the \"/login\" route is often used to handle user authentication. If not properly secured, this route can be exploited by attackers to gain unauthorized access to the application. This vulnerability can occur due to various reasons such as lack of input validation, insecure transmission of credentials, or improper session management.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, the following measures should be taken:\n\n1. **Input Validation**: Always validate user inputs to prevent SQL Injection, Cross-Site Scripting (XSS), and other injection attacks.\n\n2. **Secure Transmission**: Always use HTTPS for transmitting sensitive data like user credentials to prevent Man-In-The-Middle (MITM) attacks.\n\n3. **Proper Session Management**: Implement proper session management to prevent Session Hijacking or Session Sidejacking attacks.\n\n4. **Use of Security Headers**: Implement security headers like Content Security Policy (CSP), HTTP Strict Transport Security (HSTS) to prevent various web attacks.\n\n5. **Rate Limiting**: Implement rate limiting to prevent Brute Force attacks.\n\n## Code Fix Recommendation\n\nHere is a simple example of a secure \"/login\" route in a Flask application:\n\n```python\nfrom flask import Flask, request, session, redirect, url_for\nfrom werkzeug.security import check_password_hash\nimport rate_limit\n\napp = Flask(__name__)\napp.config['SECRET_KEY'] = 'your-secret-key'\n\n@app.route('/login', methods=['GET', 'POST'])\n@rate_limit.limit('5/minute')  # Rate limiting\ndef login():\n    error = None\n    if request.method == 'POST':\n        username = request.form['username']\n        password = request.form['password']\n        # Fetch user from the database\n        user = User.query.filter_by(username=username).first()\n        if user is None or not check_password_hash(user.password, password):\n            error = 'Invalid Credentials. Please try again.'\n        else:\n            session['logged_in'] = True\n            return redirect(url_for('home'))\n    return render_template('login.html', error=error)\n```\n\n## Library Dependencies\n\n- Flask\n- Werkzeug\n- Flask-Limiter\n\n## References\n\n- [OWASP Flask Security](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/01-Testing_for_Session_Management_Schema.html)\n- [CWE-287: Improper Authentication](https://cwe.mitre.org/data/definitions/287.html)"
               },
               "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
-              "id": "29d2f1be-6be3-36eb-bc92-0b098ab82af2",
-              "name": "resources.rules.python.flask-app-route-handler",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
-              },
-              "fullDescription": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
-              "id": "f2fd2a7d-6854-3ce0-bdf1-377b287e0653",
-              "name": "resources.rules.python.unescaped-template-extension",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.unescaped-template-extension"
-              },
-              "fullDescription": {
-                "text": "Flask does not automatically escape Jinja templates unless they have\n.html, .htm, .xml, or .xhtml extensions. This could lead to XSS attacks.\nUse .html, .htm, .xml, or .xhtml for your template extensions.\nSee https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup\nfor more information.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Flask does not automatically escape Jinja templates unless they have\n.html, .htm, .xml, or .xhtml extensions. This could lead to XSS attacks.\nUse .html, .htm, .xml, or .xhtml for your template extensions.\nSee https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup\nfor more information.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Flask does not automatically escape Jinja templates unless they have\n.html, .htm, .xml, or .xhtml extensions. This could lead to XSS attacks.\nUse .html, .htm, .xml, or .xhtml for your template extensions.\nSee https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup\nfor more information.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup](https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup)\n - [https://blog.r2c.dev/2020/bento-check-unescaped-template-extensions-in-flask/](https://blog.r2c.dev/2020/bento-check-unescaped-template-extensions-in-flask/)\n - [https://bento.dev/checks/flask/unescaped-file-extension/](https://bento.dev/checks/flask/unescaped-file-extension/)\n"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
-              "id": "9740577d-fe3f-3ed1-8cfb-b34759cd14cf",
-              "name": "resources.rules.python.flask-app-route-handler",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.flask-app-route-handler"
-              },
-              "fullDescription": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "Flask HTTP route $ROUTE will handle $METHOD requests\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Flask HTTP route $ROUTE will handle $METHOD requests\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
-              "id": "367dec2d-f3e9-3d97-a602-0e4205d1e405",
-              "name": "resources.rules.python.avoid_app_run_with_bad_host",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.avoid_app_run_with_bad_host"
-              },
-              "fullDescription": {
-                "text": "Running flask app with host 0.0.0.0 could expose the server publicly."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Running flask app with host 0.0.0.0 could expose the server publicly.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Running flask app with host 0.0.0.0 could expose the server publicly.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high"
+                "cwe": [
+                  {
+                    "id": "CWE-287",
+                    "url": "https://cwe.mitre.org/data/definitions/287.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-287"
+                ]
               }
             },
             {
@@ -221,6 +54,292 @@
                   "CWE-284"
                 ]
               }
+            },
+            {
+              "id": "0f4e5b66-86c0-3214-adb9-e127b08e4bad",
+              "name": "High-Risk Vulnerability in Version 2.10 of Package, Resolved in Version 2.10.1",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe vulnerability in question is related to the Jinja2 package, version 2.10, which is a widely used template engine for Python. This version of the package has a high-risk vulnerability that allows an attacker to execute arbitrary code via a crafted template. This is a serious security concern as it can lead to unauthorized access and control over the system where the application is running.\n\n## Security Concern\n\nThe security concern arises from the fact that an attacker can inject malicious code into the template, which is then executed when the template is rendered. This can lead to a variety of attacks, including data theft, denial of service, and even complete system takeover.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to upgrade the Jinja2 package to version 2.10.1 or later, where this vulnerability has been resolved. It is also advisable to sanitize any user input that is used in templates to prevent code injection attacks.\n\n## Source Code Fix Recommendation\n\nTo fix the vulnerability in the source code, you need to update the Jinja2 package to the latest version. This can be done by updating the requirements.txt file in your project:\n\n```python\njinja2==2.10.1            # via flask\n```\n\nThen, run the following command to update the package:\n\n```bash\npip install -r requirements.txt\n```\n\n## Library Dependencies\n\nThe Jinja2 package is a dependency of the Flask web framework. Therefore, to run the code example properly, you need to have Flask installed in your environment.\n\n## References\n\n- [OWASP Top 10 - Injection](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection)\n- [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)\n\nPlease note that the links provided are valid and active for anonymous users at the time of writing this report."
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-94",
+                    "url": "https://cwe.mitre.org/data/definitions/94.html"
+                  }
+                ],
+                "severity": "HIGH",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-94"
+                ]
+              }
+            },
+            {
+              "id": "7cd7896a-9489-3a38-9cdf-007ee6c0163b",
+              "name": "\"High Severity Vulnerability in Flask Package Version 1.0.2 (CVE-2023-30861) Resolved in Versions 2.3.2, 2.2.5\"",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nA high severity vulnerability has been identified in Flask package version 1.0.2 (CVE-2023-30861). This vulnerability can potentially allow an attacker to execute arbitrary code or commands on the server where the Flask application is running. This is a serious security concern as it can lead to unauthorized access, data breach, and potential system compromise.\n\n## Security Concern\n\nThis vulnerability is a security concern because it allows an attacker to execute arbitrary code on the server. This can lead to unauthorized access to sensitive data, disruption of the application, and even complete system compromise. The attacker could potentially gain the same privileges as the user running the application, which in many cases could be the root or administrator.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to upgrade the Flask package to versions 2.3.2 or 2.2.5 where this vulnerability has been resolved. If upgrading is not immediately possible, it is advised to implement input validation and sanitization to prevent the execution of arbitrary code.\n\n## Source Code Fix Recommendation\n\nUpgrade the Flask package in your requirements.txt file:\n\n```python\nflask==2.3.2\n```\nor\n```python\nflask==2.2.5\n```\n\n## Library Dependencies\n\nThe Flask package is the only library dependency required by the code example to execute properly.\n\n## References\n\n- [OWASP Top 10](https://owasp.org/www-project-top-ten/)\n- [Common Weakness Enumeration (CWE)](https://cwe.mitre.org/index.html)\n\nPlease note that the links provided are valid and active for anonymous users at the time of writing this report."
+              },
+              "properties": {
+                "cwe": [],
+                "severity": "HIGH",
+                "kind": "FAIL"
+              }
+            },
+            {
+              "id": "64870c0e-2b9a-3abe-aa3c-dd519d3219c6",
+              "name": "\"Logout\" HTTP route in Flask handles route requests",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nIn Python Flask web applications, the `app.route` decorator is used to bind a function to a URL route. If the `app.route` for logout does not properly handle the logout request, it can lead to vulnerabilities such as session fixation, where an attacker can hijack a user's session.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, ensure that the logout function properly invalidates the user's session. This can be done by calling `session.pop('username', None)` to remove the user's username from the session. Additionally, it's a good practice to redirect the user to a login or a public page after logout to prevent the Back button from re-authenticating the user.\n\n## Code Fix Recommendation\n\nHere is an example of a secure logout route:\n\n```python\nfrom flask import Flask, session, redirect, url_for\n\napp = Flask(__name__)\n\n@app.route('/logout')\ndef logout():\n    # remove the username from the session if it's there\n    session.pop('username', None)\n    return redirect(url_for('login'))\n```\n\n## Library Dependencies\n\nThe above code requires the Flask library. You can install it using pip:\n\n```\npip install flask\n```\n\n## References\n\n- [OWASP Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)\n- [CWE-384: Session Fixation](https://cwe.mitre.org/data/definitions/384.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-384",
+                    "url": "https://cwe.mitre.org/data/definitions/384.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-384"
+                ]
+              }
+            },
+            {
+              "id": "081bbd9b-5ad6-3b9b-8564-8a9c3da097c9",
+              "name": "\"Regex `r\"^\\w+$\"` Vulnerability to Catastrophic Backtracking and Potential Denial of Service Attacks\"",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe regular expression `r\"^\\w+$\"` in Python's `re.match` function is vulnerable to catastrophic backtracking and potential Denial of Service (DoS) attacks. This vulnerability arises when an attacker provides a specially crafted input that causes the regular expression engine to consume excessive resources while backtracking, leading to a DoS condition.\n\nCatastrophic backtracking occurs when the regex engine takes a very long time to determine whether a string matches a regular expression. This is often due to complex regular expressions with multiple paths the engine can take during the matching process. If an attacker can control the input to the regex, they can craft a string that causes the engine to take an extremely long time to process, effectively causing a DoS attack.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, you should avoid using regular expressions that can lead to catastrophic backtracking. In particular, avoid using quantifiers on both sides of a logical OR (`|`), as this can lead to multiple paths the engine can take, increasing the potential for backtracking.\n\n## Source Code Fix Recommendation\n\nInstead of using `re.match(r\"^\\w+$\", input)`, you can use a safer alternative that avoids the potential for catastrophic backtracking. For example, you can use Python's built-in string methods to check if a string consists only of alphanumeric characters:\n\n```python\nif input.isalnum():\n    # process input\n```\n\nThis code will return `True` if `input` consists only of alphanumeric characters (letters and numbers), and `False` otherwise. This avoids the use of a regular expression and the potential for catastrophic backtracking.\n\n## Library Dependencies\n\nThe code example requires no additional library dependencies beyond the Python Standard Library.\n\n## References\n\n- [OWASP: Regular expression Denial of Service - ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS)\n- [CWE-400: Uncontrolled Resource Consumption](https://cwe.mitre.org/data/definitions/400.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-400",
+                    "url": "https://cwe.mitre.org/data/definitions/400.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-400"
+                ]
+              }
+            },
+            {
+              "id": "a1e1b497-6fcc-3a95-8503-4c48cb5f85aa",
+              "name": "\"Handling Route Requests with Flask HTTP Route \"/users\"\"",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nIn Python Flask applications, the `app.route` function is used to map specific URLs to specific functions that handle requests to those URLs. A vulnerability can occur when user input is not properly validated or sanitized before being used in these functions. This can lead to various types of attacks, such as SQL Injection, Cross-Site Scripting (XSS), or Remote Code Execution (RCE).\n\nFor example, consider a Flask route \"/users\" that takes a user ID as a parameter and returns information about that user. If the user ID is not properly validated, an attacker could potentially inject malicious code or SQL commands.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to always validate and sanitize user input before using it. This can be done using various methods, such as regular expressions, white-listing, or using built-in Flask functions.\n\nAdditionally, it is recommended to use parameterized queries or prepared statements when interacting with a database, to prevent SQL Injection attacks.\n\n## Code Fix Recommendation\n\nHere is an example of a vulnerable Flask route and how to fix it:\n\n```python\n# Vulnerable code\n@app.route('/users/<user_id>')\ndef get_user(user_id):\n    # ... code that uses user_id without validation ...\n\n# Fixed code\n@app.route('/users/<int:user_id>')\ndef get_user(user_id):\n    # ... code that uses user_id safely ...\n```\n\nIn the fixed code, Flask's built-in converter is used to ensure that `user_id` is an integer. If a non-integer value is provided, Flask will automatically respond with a 404 error.\n\n## Library Dependencies\n\n- Flask\n\n## References\n\n- [OWASP Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html)\n- [CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)\n- [CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html)\n- [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-20",
+                    "url": "https://cwe.mitre.org/data/definitions/20.html"
+                  },
+                  {
+                    "id": "CWE-89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                  },
+                  {
+                    "id": "CWE-94",
+                    "url": "https://cwe.mitre.org/data/definitions/94.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-20",
+                  "CWE-89",
+                  "CWE-94"
+                ]
+              }
+            },
+            {
+              "id": "9b54370c-3b52-3f09-a35c-bf2258fa3d5c",
+              "name": "High-Risk Dockerfile Vulnerability: Lack of Non-Root User Specification",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"High-Risk Dockerfile Vulnerability: Lack of Non-Root User Specification\" is a security vulnerability in Docker where the Dockerfile does not specify a non-root user for running the container. This means that the container runs with root privileges, which can be a significant security risk. If an attacker manages to break out of the container, they would have root access to the host system, allowing them to execute arbitrary commands and potentially take over the system.\n\n## Security Concern\n\nRunning a Docker container as root is a security concern because it gives the container full control over the host system. This means that if an attacker manages to exploit a vulnerability in the container, they could potentially gain root access to the host system, which would allow them to execute arbitrary commands, access sensitive data, and generally cause havoc.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, you should always specify a non-root user in your Dockerfile. This can be done using the `USER` directive. By running the container as a non-root user, you limit the potential damage that an attacker can do if they manage to break out of the container.\n\n## Source Code Fix Recommendation\n\nHere is a fixed version of the Dockerfile:\n\n```Dockerfile\nFROM python:3.7.2-alpine3.8\n\n# Create a non-root user and switch to it\nRUN adduser --disabled-password --gecos '' myuser\nUSER myuser\n```\n\nThis Dockerfile creates a new user called `myuser` and switches to it using the `USER` directive. This means that the container will run as `myuser` rather than root, reducing the potential security risk.\n\n## References\n\n- [CWE-250: Execution with Unnecessary Privileges](https://cwe.mitre.org/data/definitions/250.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-250",
+                    "url": "https://cwe.mitre.org/data/definitions/250.html"
+                  }
+                ],
+                "severity": "HIGH",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-250"
+                ]
+              }
+            },
+            {
+              "id": "740fdbb6-ba2a-32fc-a50c-d42b0d07fe1f",
+              "name": "\"HTTP Route \"/blogs\" Managed by Flask\"",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nIn Python Flask applications, the `app.route` function is used to map specific URLs to specific functions that handle requests to those URLs. If not properly managed, this can lead to a variety of security vulnerabilities, such as unauthorized access to sensitive data, execution of arbitrary code, or even denial of service.\n\nThe HTTP route \"/blogs\" managed by Flask could be vulnerable if it does not properly validate and sanitize input, does not implement proper access controls, or does not handle errors securely.\n\n## Mitigation Advice\n\nTo mitigate these vulnerabilities, you should:\n\n- Always validate and sanitize input: Never trust user input. Always validate it to ensure it is in the expected format, and sanitize it to remove any potentially harmful data.\n\n- Implement proper access controls: Ensure that only authorized users can access sensitive data or functionality. This can be done using authentication and authorization mechanisms.\n\n- Handle errors securely: Do not reveal sensitive information in error messages, and do not allow errors to interrupt the normal operation of the application.\n\n## Source Code Fix Recommendation\n\nHere is a simple example of how to implement these mitigations in a Flask route:\n\n```python\nfrom flask import Flask, request, abort\nimport re\n\napp = Flask(__name__)\n\n@app.route('/blogs', methods=['GET'])\ndef get_blogs():\n    # Validate and sanitize input\n    blog_id = request.args.get('id')\n    if blog_id is not None and not re.match(r'^\\d+$', blog_id):\n        abort(400)  # Bad request\n\n    # Implement access controls\n    if not user_is_authorized():\n        abort(403)  # Forbidden\n\n    # Handle errors securely\n    try:\n        return get_blog(blog_id)\n    except Exception:\n        abort(500)  # Internal server error\n```\n\nIn this example, the `get_blogs` function validates and sanitizes the `id` parameter, checks if the user is authorized to access the blog, and handles any errors that occur when getting the blog.\n\n## Library Dependencies\n\nThe code example requires the following library dependencies:\n\n- Flask\n\n## References\n\n- [OWASP Flask Security](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes)\n- [CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)\n- [CWE-285: Improper Authorization](https://cwe.mitre.org/data/definitions/285.html)\n- [CWE-209: Information Exposure Through an Error Message](https://cwe.mitre.org/data/definitions/209.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-20",
+                    "url": "https://cwe.mitre.org/data/definitions/20.html"
+                  },
+                  {
+                    "id": "CWE-285",
+                    "url": "https://cwe.mitre.org/data/definitions/285.html"
+                  },
+                  {
+                    "id": "CWE-209",
+                    "url": "https://cwe.mitre.org/data/definitions/209.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-20",
+                  "CWE-285",
+                  "CWE-209"
+                ]
+              }
+            },
+            {
+              "id": "f2fd2a7d-6854-3ce0-bdf1-377b287e0653",
+              "name": "Potential XSS vulnerability due to Flask not auto-escaping Jinja templates without .html, .htm, .xml, or .xhtml extensions.",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nCross-Site Scripting (XSS) vulnerabilities occur when an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript. XSS allows attackers to execute scripts in the victim's browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.\n\nIn the context of Flask and Jinja templates, Flask automatically enables autoescaping for files with .html, .htm, .xml, or .xhtml extensions. This means that if you're using a different extension for your templates, Flask will not autoescape the content, potentially leading to XSS vulnerabilities.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, you should always escape user input that is rendered in templates. This can be done by using the `|e` or `|escape` filter in Jinja templates. Alternatively, you can enable autoescaping globally in your Flask application.\n\n## Source Code Fix Recommendation\n\nIf you have a function like this:\n\n```python\ndef sanitize(username):\n    return Markup.escape(username)\n```\n\nYou can use it in your templates like this:\n\n```jinja\n{{ sanitize(username) }}\n```\n\nOr you can enable autoescaping globally:\n\n```python\nfrom jinja2 import select_autoescape\napp.jinja_env.autoescape = select_autoescape(default=True)\n```\n\n## Library Dependencies\n\nThe code example requires the following libraries:\n\n- Flask\n- Jinja2\n- MarkupSafe\n\n## References\n\n- [OWASP XSS Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)\n- [CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-79",
+                    "url": "https://cwe.mitre.org/data/definitions/79.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-79"
+                ]
+              }
+            },
+            {
+              "id": "9740577d-fe3f-3ed1-8cfb-b34759cd14cf",
+              "name": "\"Handling Route Requests with Flask HTTP Route \"/\"\"\n",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nIn Python Flask web applications, the `app.route` decorator is used to bind a function to a URL route. If not properly handled, it can lead to various security vulnerabilities such as Unvalidated Redirects and Forwards, Injection, and Cross-Site Scripting (XSS).\n\nFor instance, if user input is directly used to determine the route, an attacker could manipulate the input to access unauthorized routes or perform malicious actions. This is a form of Unvalidated Redirects and Forwards vulnerability (CWE-601).\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to:\n\n- Avoid using user input to determine the route directly. If it's necessary, validate and sanitize the input before using it.\n- Use a whitelist of allowed paths and reject any request not matching the whitelist.\n- Implement proper error handling so that no sensitive information is leaked through error messages.\n\n## Source Code Fix Recommendation\n\nHere is an example of a vulnerable Flask route:\n\n```python\nfrom flask import Flask, request\napp = Flask(__name__)\n\n@app.route('/')\ndef home():\n    return 'Home Page'\n\n@app.route('/<name>')\ndef user(name):\n    return 'Hello, %s!' % name\n```\n\nIn the above code, the `<name>` in the route can be manipulated by an attacker. A safer approach would be:\n\n```python\nfrom flask import Flask, request\napp = Flask(__name__)\n\n@app.route('/')\ndef home():\n    return 'Home Page'\n\n@app.route('/user/<name>')\ndef user(name):\n    # Validate and sanitize the name before using it\n    name = sanitize_input(name)\n    if name in allowed_names:\n        return 'Hello, %s!' % name\n    else:\n        return 'Invalid user'\n```\n\nIn this code, `sanitize_input` is a function that you would implement to sanitize the input, and `allowed_names` is a list of allowed names.\n\n## Library Dependencies\n\n- Flask\n\n## References\n\n- [OWASP Unvalidated Redirects and Forwards Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html)\n- [CWE-601: URL Redirection to Untrusted Site ('Open Redirect')](https://cwe.mitre.org/data/definitions/601.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-601",
+                    "url": "https://cwe.mitre.org/data/definitions/601.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-601"
+                ]
+              }
+            },
+            {
+              "id": "55270ac6-68d7-344e-8ed6-96f50d993731",
+              "name": "High-Risk Vulnerability in Werkzeug Package Version 0.14.1, Fixed in Version 2.2.3 (CVE-2023-25577)",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe Werkzeug package version 0.14.1 in Docker has a high-risk vulnerability (CVE-2023-25577). This vulnerability allows an attacker to execute arbitrary code remotely on the target system. This is a serious security concern as it can lead to unauthorized access and control over the system, data breaches, and other malicious activities.\n\n## Security Concern\n\nThis vulnerability is a security concern because it allows an attacker to execute arbitrary code remotely on the target system. This can lead to unauthorized access and control over the system, data breaches, and other malicious activities. The attacker can potentially gain full control over the system, manipulate data, install malicious software, and perform other harmful actions.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to upgrade the Werkzeug package to version 2.2.3 or later. This can be done by updating the package in the requirements.txt file:\n\n```python\nwerkzeug==2.2.3          # via flask\n```\n\nThen, run the following command to update the package:\n\n```bash\npip install -r requirements.txt\n```\n\n## Source Code Fix Recommendation\n\nTo fix the vulnerability in the source code, you should update the Werkzeug package to version 2.2.3 or later. This can be done by updating the package in the requirements.txt file:\n\n```python\nwerkzeug==2.2.3          # via flask\n```\n\nThen, run the following command to update the package:\n\n```bash\npip install -r requirements.txt\n```\n\n## Library Dependencies\n\nThe code example requires the following library dependencies to execute properly:\n\n- Flask\n- Werkzeug\n\n## OWASP Resources\n\n\n## Common Weakness Enumeration (CWE)\n\n- [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)\n\nPlease note that all the links provided are active and accessible to anonymous users."
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-94",
+                    "url": "https://cwe.mitre.org/data/definitions/94.html"
+                  }
+                ],
+                "severity": "HIGH",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-94"
+                ]
+              }
+            },
+            {
+              "id": "29d2f1be-6be3-36eb-bc92-0b098ab82af2",
+              "name": "\"Handling Route Requests with Flask HTTP Route \"/blogs/add\"\"",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe Flask HTTP route \"/blogs/add\" is vulnerable to several potential security issues, including Cross-Site Scripting (XSS), SQL Injection, and Cross-Site Request Forgery (CSRF). These vulnerabilities can allow an attacker to inject malicious scripts or queries, or to trick a user into performing actions they did not intend to.\n\n## Mitigation Advice\n\nTo mitigate these vulnerabilities, it is recommended to:\n\n1. **Validate Input**: Always validate user input to ensure it is in the correct format and does not contain malicious content. This can help prevent SQL Injection and XSS attacks.\n\n2. **Escape Output**: When displaying user-generated content, always escape it to ensure any potentially harmful scripts are not executed. This can help prevent XSS attacks.\n\n3. **Use CSRF Tokens**: Use CSRF tokens in forms to ensure requests are only accepted from legitimate sources. This can help prevent CSRF attacks.\n\n## Source Code Fix Recommendation\n\nHere is a simple example of how to implement these mitigations in a Flask route:\n\n```python\nfrom flask import Flask, request, render_template_string\nfrom flask_wtf import FlaskForm\nfrom wtforms import StringField\nfrom wtforms.validators import DataRequired\n\napp = Flask(__name__)\napp.config['SECRET_KEY'] = 'your-secret-key'\n\nclass BlogForm(FlaskForm):\n    title = StringField('Title', validators=[DataRequired()])\n    content = StringField('Content', validators=[DataRequired()])\n\n@app.route('/blogs/add', methods=['GET', 'POST'])\ndef add_blog():\n    form = BlogForm()\n    if form.validate_on_submit():\n        # Add blog to database\n        pass\n    return render_template_string('''\n        <form method=\"POST\">\n            {{ form.hidden_tag() }}\n            {{ form.title.label }} {{ form.title() }}\n            {{ form.content.label }} {{ form.content() }}\n            <input type=\"submit\">\n        </form>\n    ''', form=form)\n```\n\nIn this example, the `BlogForm` class is used to validate the user input and the `form.hidden_tag()` is used to include a CSRF token in the form.\n\n## Library Dependencies\n\n- Flask\n- Flask-WTF\n- WTForms\n\n## References\n\n- [OWASP Flask Security](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes)\n- [CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)\n- [CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html)\n- [CWE-352: Cross-Site Request Forgery (CSRF)](https://cwe.mitre.org/data/definitions/352.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-79",
+                    "url": "https://cwe.mitre.org/data/definitions/79.html"
+                  },
+                  {
+                    "id": "CWE-89",
+                    "url": "https://cwe.mitre.org/data/definitions/89.html"
+                  },
+                  {
+                    "id": "CWE-352",
+                    "url": "https://cwe.mitre.org/data/definitions/352.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-79",
+                  "CWE-89",
+                  "CWE-352"
+                ]
+              }
+            },
+            {
+              "id": "367dec2d-f3e9-3d97-a602-0e4205d1e405",
+              "name": "Public Exposure Risk with Flask App Running on Host 0.0.0.0",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nIn Python Flask applications, using `app.run(host='0.0.0.0')` or `app.run()` (which defaults to `0.0.0.0`) will make your server publicly available to anyone on the internet. This is a security risk as it exposes your application to the public internet, potentially allowing unauthorized access to your application and data.\n\n## Mitigation Advice\n\nTo mitigate this risk, you should not run your Flask application with `host='0.0.0.0'` in a production environment. Instead, you should use a production WSGI server like Gunicorn or uWSGI to serve your Flask application. \n\n## Source Code Fix Recommendation\n\nInstead of running your Flask application with `app.run(host='0.0.0.0')`, you should use a production WSGI server. Here is an example of how to do this with Gunicorn:\n\n```python\n# app.py\nfrom flask import Flask\napp = Flask(__name__)\n\n# your routes here\n\nif __name__ == \"__main__\":\n    app.run()\n```\n\nThen, run your application with Gunicorn:\n\n```bash\ngunicorn app:app\n```\n\n## Library Dependencies\n\n- Flask\n- Gunicorn or uWSGI\n\n## References\n\n- [CWE-200: Information Exposure](https://cwe.mitre.org/data/definitions/200.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-200",
+                    "url": "https://cwe.mitre.org/data/definitions/200.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-200"
+                ]
+              }
             }
           ],
           "language": "en-US",
@@ -234,135 +353,11 @@
       "language": "en-US",
       "results": [
         {
-          "ruleId": "a1e1b497-6fcc-3a95-8503-4c48cb5f85aa",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Flask HTTP route \"/users\" will handle route requests"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "app.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 77,
-                  "startColumn": 1,
-                  "endLine": 79,
-                  "endColumn": 73,
-                  "snippet": {
-                    "text": "@app.route(\"/users\")\ndef users():\n    return render_template(\"users.html\", users=usermanager.users.keys())"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "bffba01721e8f5d314ae537ac0126565e450abf9d83c950cc77ad46f5a505522b29016b9108c1870dc34a7fcd87f95428ebcfdd09be8d3024b0607cc6b9eb72c_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "081bbd9b-5ad6-3b9b-8564-8a9c3da097c9",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `r\"^\\w+$\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "app.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 26,
-                  "endLine": 49,
-                  "endColumn": 54,
-                  "snippet": {
-                    "text": "    if not (username and re.match(r\"^\\w+$\", username)):"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "ef3e89b3365c41befb43ed1be559038c03d261c31a355489685bd699e5d70b3464484c579636cc8bc13c89a70a5f3036be8d18e5d483ab929d7792fac7a94600_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "64870c0e-2b9a-3abe-aa3c-dd519d3219c6",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Flask HTTP route \"/logout\" will handle route requests"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "app.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 69,
-                  "startColumn": 1,
-                  "endLine": 74,
-                  "endColumn": 35,
-                  "snippet": {
-                    "text": "@app.route(\"/logout\")\ndef logout():\n    if logged_in():\n        session[SESSION_USERNAME] = None\n\n    return redirect(\"/\", code=302)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "5984559ddd53bfd9b1cb6ba3f01f6fbb7cf4738bc0c1b49fb9a5b0af147421ba68bd8c353752dcece17f51fd751cc87a5b70c3308358e7569e7cbe41272ff5fd_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "740fdbb6-ba2a-32fc-a50c-d42b0d07fe1f",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Flask HTTP route \"/blogs\" will handle route requests"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "app.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 1,
-                  "endLine": 96,
-                  "endColumn": 82,
-                  "snippet": {
-                    "text": "@app.route(\"/blogs\")\ndef blogs():\n    if not logged_in():\n        return redirect(\"/login\", code=302)\n\n    username = request.args.get(\"u\")\n    if not username:\n        username = session[SESSION_USERNAME]\n\n    blogs = (\n        blogmanager.get(username)\n        if username != session[SESSION_USERNAME]\n        else blogmanager.get(username, True)\n    )\n    return render_template(\"blogs.tpl\", username=sanitize(username), blogs=blogs)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "868b3dcc5f5b88e101cef3e8b031c9fe77a2a13d6e59c1322bd06b20ac96d4b5c5d363d4e4becc0fbca8450e6ec4a2ecaa16736b7641386bba756c993ba351c4_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "d9ed1c80-0e29-3110-8337-e973bafdf1cf",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Flask HTTP route \"/login\" will handle route requests"
+            "text": "\"Handling Route Requests with Flask HTTP \"/login\" Route\""
           },
           "locations": [
             {
@@ -383,132 +378,12 @@
               }
             }
           ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "6a7ce9c86ebbd2c032080f68c5b22bf9d41595799ce3abed56fd55bdcc2dbbd8",
+            "glog-pfp-ruleFileCode/v1": "a47d1eafa0e2dd1afd1e491110f497ce33715e82325cb14ae7fac7776d04dec2"
+          },
           "fingerprints": {
-            "matchBasedId/v1": "20ce8e0ecece1a12dd9a6862ce3a616d2c3dd79efa1d6ef27cadea5c2dba54f1f886a0d2726cd122a3dab22cf5e59d2b236bdb34add863c15922eb1b15b00316_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "29d2f1be-6be3-36eb-bc92-0b098ab82af2",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Flask HTTP route \"/blogs/add\" will handle route requests"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "app.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 99,
-                  "startColumn": 1,
-                  "endLine": 116,
-                  "endColumn": 61,
-                  "snippet": {
-                    "text": "@app.route(\"/blogs/add\", methods=[\"GET\", \"POST\"])\ndef blogs_add():\n    if not logged_in():\n        return redirect(\"/login\", code=302)\n\n    if request.method == \"GET\":\n        return render_template(\"blog_add.html\")\n\n    # POST\n    title = request.form.get(\"title\")\n    html = request.form.get(\"html\")\n\n    if title and len(title) <= 24 and html:\n        blogmanager.add(\n            session[SESSION_USERNAME], title, html, request.form.get(\"private\", False)\n        )\n\n    return redirect(f\"/blogs?u={session[SESSION_USERNAME]}\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "d0a03a064cfce50ba8c0ed740b202d70e13f194cfaeee460c72ab0a4ebb97f7392a931af7d52eb2abca247c884080d63d4ac51f3017fbace76e6248fce031943_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "f2fd2a7d-6854-3ce0-bdf1-377b287e0653",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Flask does not automatically escape Jinja templates unless they have .html, .htm, .xml, or .xhtml extensions. This could lead to XSS attacks. Use .html, .htm, .xml, or .xhtml for your template extensions. See https://flask.palletsprojects.com/en/1.1.x/templating/#jinja-setup for more information."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "app.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 96,
-                  "startColumn": 12,
-                  "endLine": 96,
-                  "endColumn": 82,
-                  "snippet": {
-                    "text": "    return render_template(\"blogs.tpl\", username=sanitize(username), blogs=blogs)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "dd31fded618cb45a996884b27805f6cd73cb6e4bd52570275ba604755ece954c622c2efb10d9226c642e85db35e23cca5f6d54fbc07588ca0446afdb45d60edf_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "367dec2d-f3e9-3d97-a602-0e4205d1e405",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Running flask app with host 0.0.0.0 could expose the server publicly."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "app.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 128,
-                  "startColumn": 5,
-                  "endLine": 128,
-                  "endColumn": 23,
-                  "snippet": {
-                    "text": "    app.run(\"0.0.0.0\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "4cd678ba7a41fc9b86afb7e17aeafefbe343c3d350c9d1c2e42fb7cb3474164e9eb1907005e2c64393d6cb7e4e19aaa5d3f02ce6b2dd52dfffe9e983e0732ea8_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "9740577d-fe3f-3ed1-8cfb-b34759cd14cf",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Flask HTTP route \"/\" will handle route requests"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "app.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 119,
-                  "startColumn": 1,
-                  "endLine": 124,
-                  "endColumn": 77,
-                  "snippet": {
-                    "text": "@app.route(\"/\")\ndef home():\n    if not logged_in():\n        return redirect(\"/login\", code=302)\n\n    return render_template(\"index.html\", username=session[SESSION_USERNAME])"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "671936d79c5e004eaaa9c54e988cfd11c752649e6397a5e2ba20842b42cd1c23022b24a4af096367fdb7f9bb0b7bca46af0e923c7f796699521b5d7c192ed42b_0"
+            "glog-fp-ruleFileCode/v1": "a47d1eafa0e2dd1afd1e491110f497ce33715e82325cb14ae7fac7776d04dec2"
           },
           "properties": {}
         },
@@ -555,6 +430,434 @@
             "issue_severity": "MEDIUM",
             "issue_confidence": "MEDIUM"
           }
+        },
+        {
+          "ruleId": "0f4e5b66-86c0-3214-adb9-e127b08e4bad",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "High-Risk Vulnerability in Version 2.10 of Package, Resolved in Version 2.10.1"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 1,
+                  "endLine": 14,
+                  "endColumn": 1,
+                  "snippet": {
+                    "text": "jinja2==2.10              # via flask"
+                  }
+                }
+              },
+              "message": {
+                "text": "requirements.txt: jinja2@2.10"
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "e924c38c647ea388a6c2f5af24e2f96e69b7ad0e07889ebcdd6f19391795015f",
+            "glog-pfp-ruleFileCode/v1": "8034edf623da2a735e6c29266743cf98ed4c3e6360e93c8e32afd534bca060b5"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "8034edf623da2a735e6c29266743cf98ed4c3e6360e93c8e32afd534bca060b5"
+          }
+        },
+        {
+          "ruleId": "7cd7896a-9489-3a38-9cdf-007ee6c0163b",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "\"High Severity Vulnerability in Flask Package Version 1.0.2 (CVE-2023-30861) Resolved in Versions 2.3.2, 2.2.5\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "endLine": 12,
+                  "endColumn": 1,
+                  "snippet": {
+                    "text": "flask==1.0.2"
+                  }
+                }
+              },
+              "message": {
+                "text": "requirements.txt: flask@1.0.2"
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "dc7b19a4f08c38e114047699c1ad4a5e5f96c52ce4cdc660451e5568e479f3e3",
+            "glog-pfp-ruleFileCode/v1": "ff6d4856ca88935bb0271ed8b68fe0c9763a378c80833d14f18cc6f8810d8d26"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "ff6d4856ca88935bb0271ed8b68fe0c9763a378c80833d14f18cc6f8810d8d26"
+          }
+        },
+        {
+          "ruleId": "64870c0e-2b9a-3abe-aa3c-dd519d3219c6",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "\"Logout\" HTTP route in Flask handles route requests"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 1,
+                  "endLine": 74,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "@app.route(\"/logout\")\ndef logout():\n    if logged_in():\n        session[SESSION_USERNAME] = None\n\n    return redirect(\"/\", code=302)"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "ba4e82730c86105d7bfe52eeff7cc2e8dca9ba873d2beaf2eb45bafe129c49e9",
+            "glog-pfp-ruleFileCode/v1": "067a60da56d15fcb8f98ba19458b8fc3adfedabe49c7c4ce4317a92d2460d0c1"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "067a60da56d15fcb8f98ba19458b8fc3adfedabe49c7c4ce4317a92d2460d0c1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "081bbd9b-5ad6-3b9b-8564-8a9c3da097c9",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "\"Regex `r\"^\\w+$\"` Vulnerability to Catastrophic Backtracking and Potential Denial of Service Attacks\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 26,
+                  "endLine": 49,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "    if not (username and re.match(r\"^\\w+$\", username)):"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "2ffd91990dbccf8c91d0182cbdc67587db68a88c5fac1a5dc1ab79da21e6c6e0",
+            "glog-pfp-ruleFileCode/v1": "d05813b001976a2760cd621b204a0818812de5fb09932196598d1f83b99d6ab3"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "d05813b001976a2760cd621b204a0818812de5fb09932196598d1f83b99d6ab3"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "55270ac6-68d7-344e-8ed6-96f50d993731",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "\"Werkzeug Package High Severity Vulnerability (CVE-2019-14806) Resolved in Version 0.15.3\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 1,
+                  "endLine": 18,
+                  "endColumn": 1,
+                  "snippet": {
+                    "text": "werkzeug==0.14.1          # via flask"
+                  }
+                }
+              },
+              "message": {
+                "text": "requirements.txt: werkzeug@0.14.1"
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "e3676da4ba8c41646408cf2e6ea9a01a806f3a208a0552c1f2824796bf4ce121",
+            "glog-pfp-ruleFileCode/v1": "0b36054b468b318ea9d648df374fa134f48a4a2a86efe43e853a5d8d2cbd147d"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "0b36054b468b318ea9d648df374fa134f48a4a2a86efe43e853a5d8d2cbd147d"
+          }
+        },
+        {
+          "ruleId": "a1e1b497-6fcc-3a95-8503-4c48cb5f85aa",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "\"Handling Route Requests with Flask HTTP Route \"/users\"\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 1,
+                  "endLine": 79,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "@app.route(\"/users\")\ndef users():\n    return render_template(\"users.html\", users=usermanager.users.keys())"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "b3fea136b2081e0d582eed67db7fac01e30f2d87f7ccf600f02b8e91b8b4f151",
+            "glog-pfp-ruleFileCode/v1": "797adfcbb6d9534e6edb305b4fd9c42dae30873333dec074eb3dc5cabb78360c"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "797adfcbb6d9534e6edb305b4fd9c42dae30873333dec074eb3dc5cabb78360c"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "f2fd2a7d-6854-3ce0-bdf1-377b287e0653",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Flask's lack of automatic Jinja template escaping may result in XSS attacks."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 12,
+                  "endLine": 96,
+                  "endColumn": 82,
+                  "snippet": {
+                    "text": "    return render_template(\"blogs.tpl\", username=sanitize(username), blogs=blogs)"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "4e64f17668cf4b1075709f97ac90a94e53fe37b56bb36b7c25b8d95dc5e92358",
+            "glog-pfp-ruleFileCode/v1": "a59ae09c5312f813c7c9e4228b5916de3f0eacd9e160c2eaa732be44a995e4ef"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "a59ae09c5312f813c7c9e4228b5916de3f0eacd9e160c2eaa732be44a995e4ef"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "9b54370c-3b52-3f09-a35c-bf2258fa3d5c",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "High-Risk Dockerfile Vulnerability: Lack of Non-Root User Specification"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1,
+                  "snippet": {
+                    "text": "FROM python:3.7.2-alpine3.8"
+                  }
+                }
+              },
+              "message": {
+                "text": "Dockerfile"
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "619b2b982d4bd8cc822800463fa7b8b5eb30d1795d5284d1a8bd6aa278416820",
+            "glog-pfp-ruleFileCode/v1": "9451c0ab98017b26d6c0920d6bc4ed21c2c31136bec2547272920bd6236125e7"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "9451c0ab98017b26d6c0920d6bc4ed21c2c31136bec2547272920bd6236125e7"
+          }
+        },
+        {
+          "ruleId": "740fdbb6-ba2a-32fc-a50c-d42b0d07fe1f",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "\"HTTP Route \"/blogs\" Managed by Flask\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 1,
+                  "endLine": 96,
+                  "endColumn": 82,
+                  "snippet": {
+                    "text": "@app.route(\"/blogs\")\ndef blogs():\n    if not logged_in():\n        return redirect(\"/login\", code=302)\n\n    username = request.args.get(\"u\")\n    if not username:\n        username = session[SESSION_USERNAME]\n\n    blogs = (\n        blogmanager.get(username)\n        if username != session[SESSION_USERNAME]\n        else blogmanager.get(username, True)\n    )\n    return render_template(\"blogs.tpl\", username=sanitize(username), blogs=blogs)"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "799398854e25c9e118b4aa60008053090918f54d29e9571743f75e5d7641175a",
+            "glog-pfp-ruleFileCode/v1": "90c3a352ccbcf7a16bbc1ca9b78e9b6165d173d72d95a9b23fda2a85c6dc7a27"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "90c3a352ccbcf7a16bbc1ca9b78e9b6165d173d72d95a9b23fda2a85c6dc7a27"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "9740577d-fe3f-3ed1-8cfb-b34759cd14cf",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "\"Handling Route Requests with Flask HTTP Route \"/\"\"\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 1,
+                  "endLine": 124,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "@app.route(\"/\")\ndef home():\n    if not logged_in():\n        return redirect(\"/login\", code=302)\n\n    return render_template(\"index.html\", username=session[SESSION_USERNAME])"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "1cba17930a45b6aa698bde94fe79bd35fbebefe5def01574c1cf79d190668e46",
+            "glog-pfp-ruleFileCode/v1": "82a6b580b11b67b1e39c54d49dc6597562d5dd94cc947265d91c983c9ea8bb1b"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "82a6b580b11b67b1e39c54d49dc6597562d5dd94cc947265d91c983c9ea8bb1b"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "29d2f1be-6be3-36eb-bc92-0b098ab82af2",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "\"Handling Route Requests with Flask HTTP Route \"/blogs/add\"\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 1,
+                  "endLine": 116,
+                  "endColumn": 61,
+                  "snippet": {
+                    "text": "@app.route(\"/blogs/add\", methods=[\"GET\", \"POST\"])\ndef blogs_add():\n    if not logged_in():\n        return redirect(\"/login\", code=302)\n\n    if request.method == \"GET\":\n        return render_template(\"blog_add.html\")\n\n    # POST\n    title = request.form.get(\"title\")\n    html = request.form.get(\"html\")\n\n    if title and len(title) <= 24 and html:\n        blogmanager.add(\n            session[SESSION_USERNAME], title, html, request.form.get(\"private\", False)\n        )\n\n    return redirect(f\"/blogs?u={session[SESSION_USERNAME]}\")"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "37c85f27c0b4a7c222922d02bcb2d78c39e7128629d41f7e9254b877a2e2d821",
+            "glog-pfp-ruleFileCode/v1": "7d81070abc629262fc7b71ed71884e980d5645b1b6c26f5c58b70a9b0c552602"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "7d81070abc629262fc7b71ed71884e980d5645b1b6c26f5c58b70a9b0c552602"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "367dec2d-f3e9-3d97-a602-0e4205d1e405",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Public Exposure Risk with Flask App Running on Host 0.0.0.0"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "app.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 5,
+                  "endLine": 128,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "    app.run(\"0.0.0.0\")"
+                  }
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "cf7e8906ed05b60295e217ac6f3248f4debf7f39a9a0cd61e8dd071b024ad476",
+            "glog-pfp-ruleFileCode/v1": "ba5437934de4ae90147fa0961bbeb210aadb8792d31fc204e0a74654e19675f8"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "ba5437934de4ae90147fa0961bbeb210aadb8792d31fc204e0a74654e19675f8"
+          },
+          "properties": {}
         }
       ],
       "newlineSequences": [
